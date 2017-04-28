@@ -1,5 +1,9 @@
 function array2cloze (thisArray) {
-    return "NOT IMPLEMENTED YET";    
+    var result = "";
+    for (var i=0; i< thisArray.length; i++) {
+       result += qi2cloze(thisArray[i]);
+    }
+    return result;
 }
 
 function fr2cloze (qi) {
@@ -27,7 +31,7 @@ function mc2cloze (qi) {
 }
 
 function label2cloze (qi) {
-    return "NOT IMPLEMENTED YET";    
+    return "<div>"+ qi.label + "</div>";    
 }
 
 
